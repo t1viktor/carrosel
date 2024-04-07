@@ -1,0 +1,36 @@
+.carrosel {
+    display: flex;
+    overflow: hidden;
+    width: 300px; 
+    height: 200px; 
+    border: solid 2px black;
+}
+
+img {
+    width: 200px;
+}
+  
+.mover {
+    width: 300px; 
+    height: 200px; 
+    animation-name: girar;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;  
+    padding: 0 40px;
+}
+  
+@keyframes girar {
+    0% {
+      transform: translateX(0); 
+    }
+    33% {
+      transform: translateX(-100%); 
+    }
+    66% {
+      transform: translateX(-200%); 
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+  
